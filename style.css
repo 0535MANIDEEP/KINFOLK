@@ -1,0 +1,1279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: kinfolk-sans;
+}
+
+
+@font-face {
+  font-family: 'Kinfolk';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kinfolk'), url('https://fonts.cdnfonts.com/s/99634/Kinfolk-BF6489374c94f25.woff') format('woff');
+}
+
+
+body {
+  font-family: Kinfolk-sans;
+  /* Assuming a sans-serif font is used */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+header{
+  overflow:scroll;
+}
+.logo-transform{
+  overflow:scroll;
+}
+
+
+h4 {
+  font-family: Kinfolk-Sans;
+}
+
+main {
+  text-align: center;
+}
+
+
+#complete-website-body{
+  width: 100%;
+}
+p {
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-family: "Kinfolf-sans", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #4d4d4d;
+  white-space: initial;
+  word-wrap: break-word;
+
+  margin: 0 0 20px;
+}
+
+a {
+  text-decoration: none; !important
+  color: black; !important
+}
+
+a:hover{
+  color: black; !important
+}
+
+#top-row-header {
+  padding: 20px 60px;
+  display: flex;
+  /* Create a flexbox layout */
+  overflow: auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  position: fixed;
+  overflow: hidden;
+  z-index: 100;
+  font-family: "Kinfolk-Sans";
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.left-side-of-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  float: left;
+}
+
+.left-side-of-header ul{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.right-side-of-header {
+  display: flex;
+  align-items: center;
+  float: right;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+#search-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.menu-icon {
+  line-height: 1.4;
+  color: #000;
+  font-size: 21px;
+  font-weight: normal;
+  font-family: "Kinfolk-Serif-Text";
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 17px;
+  width: 36px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.menu-list {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow: auto;
+  transition: 0.5s;
+  margin: 0px 0 30px 0;
+  border-bottom: 1px solid #b5b5b5;
+  text-align: left;
+  line-height: 1.07;
+  transition: linear 150ms color;
+  letter-spacing: -0.0108em;
+  overflow: scroll;
+  height: 100vh;
+  width: 34%;
+
+
+}
+
+
+#my-menu-list{
+  display: none;
+}
+.menu-icon span {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  display: block;
+}
+
+.menu-list.open {
+  position:absolute;
+  width: 490px;
+  height: 100%;
+  top: 0;
+  z-index: 99;
+  overflow: auto;
+  right: 0;
+  -webkit-transform: translate3d(490px, 0px, 0);
+  transform: translate3d(490px, 0px, 0);
+  transition: -webkit-transform 225ms;
+  transition: transform 225ms;
+  background-color: #ffffff;
+}
+
+.closebtn {
+  position: absolute;
+  top: 14px;
+  right: 60px;
+  transform: scale(2.3);
+}
+
+.header-of-menu nav {
+  margin: 0px 0 30px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+  
+}
+
+.menu-list a {
+  padding: 7px 7px 7px 28px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+  font-size: 3vh;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.left-side-of-header {
+  justify-content: left;
+  flex-wrap: nowrap;
+  align-items: start;
+}
+
+.right-side-of-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#subscribe-button {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 8px 23px;
+  gap: 15px;
+  box-shadow: none;
+  border: 1px solid #000;
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  transition: all 200ms linear;
+  font-family: "Kinfolk-Serif-Text";
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: calc(-0.00313 * 100vw + 10px);
+}
+
+#subscribe-button:hover {
+  filter: brightness(75%);
+  color: white;
+  background-color: black;
+  line-height: normal;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
+  font-weight: 100;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  box-sizing: content-box;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.side-menu-top {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; */
+  background-color: #fff;
+}
+
+
+#my-menu-list{
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  &:-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+}
+
+.side-menu-top ul li{
+list-style: none;
+text-decoration: none;
+}
+.side-menu-middle {
+  padding: 20px;
+}
+
+
+.part-one-list{
+  border-bottom: 1px solid black;
+    width: 90%;
+    margin: 5%;
+}
+.part-two-list{
+  border-bottom: 3px solid black;
+    width: 90%;
+    margin: 5%;
+}
+
+#logo-kinfolk {
+  width: 50%;
+  position: fixed;
+  top: 19vh;
+  z-index: 101;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  transition: all 0.07s ease-out 0s;
+}
+
+
+
+
+.side-menu-middle ul{
+  list-style: none;
+  text-decoration: none;
+
+  border-bottom-color: rgb(181, 181, 181);
+border-bottom-style :solid;
+border-bottom-width: 0.8px;
+box-sizing: border-box;
+color :rgb(0, 0, 0);
+direction: ltr;
+display: flex;
+flex-wrap :wrap;
+font-family :Kinfolk-Serif-Text;
+font-size :21.888px;
+font-style: normal;
+font-weight: 400;
+height :313.513px;
+letter-spacing: -0.23639px;
+line-height :23.4202px;
+margin-block-end :30px;
+margin-bottom :30px;
+padding-bottom: 30px;
+text-size-adjust: 100%;
+
+width :450px;
+
+}
+
+.login-or-register-and-subscribe-buttons{
+  position: sticky;
+    bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex: 1;
+
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    padding: 40px;
+    background-color: #fff;
+  
+    flex-wrap: wrap;
+    padding: 15px 15px 15px 15px;
+}
+
+#login-or-register-button{
+  box-sizing :border-box;
+color :rgb(0, 0, 0);
+display :list-item;
+font-family :Kinfolk-Serif-Text, serif;
+font-size :12px;
+font-style :normal;
+font-weight :400;
+height :45.1875px;
+line-height :16.8px;
+list-style-image: none;
+list-style-position :outside;;
+list-style-type :none;
+text-align :left;
+text-size-adjust: 100%;
+
+
+width: 100%;
+    display: block;
+    text-align: center;
+
+    text-decoration: none;
+    padding: 8px 23px;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    transition: all 200ms linear;
+    font-family: "Kinfolk-Sans";
+    font-weight: normal;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+#subscribe-button2{
+  box-sizing :border-box;
+color :rgb(0, 0, 0);
+display :list-item;
+font-family :Kinfolk-Serif-Text, serif;
+font-size :12px;
+font-style :normal;
+font-weight :400;
+height :45.1875px;
+line-height :16.8px;
+list-style-image: none;
+list-style-position :outside;;
+list-style-type :none;
+text-align :left;
+text-size-adjust: 100%;
+
+
+width: 100%;
+    display: block;
+    text-align: center;
+
+    text-decoration: none;
+    padding: 8px 23px;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    transition: all 200ms linear;
+    font-family: "Kinfolk-Sans";
+    font-weight: normal;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.white-gap {
+  height: 32vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.issue-fifty-container{
+  width: 100%;
+}
+
+.issue-fifty-image {
+  object-fit: contain;
+  position: relative;
+  width: 100%;
+  
+}
+
+
+
+#text-on-large-image #issue-number {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 5.625rem;
+  position: absolute;
+  left: 50%;
+  top: 78%;
+  transform: translate(-50%,-50%);
+}
+
+#text-on-large-image #celebration {
+  color: #ffffff;
+  font-family: "Kinfolk-Serif-Text";
+  line-height: calc(0.00063 * 100vw + 28px);
+  font-weight: normal;
+  font-size: calc(0.00187 * 100vw + 15px);
+  margin: 27px auto 0 auto;
+  width: 100%;
+  min-width: 300px;
+  max-width: 730px;
+  position: absolute;
+  top:92%;
+  left: 50%;
+  transform: translate(-15%,-50%);
+}
+
+#big-left-short-right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding: 100px 50px 50px 30px;
+}
+
+#left-big {
+  width: fit-content;
+  word-wrap: break-word;
+  white-space: initial;
+  
+
+}
+
+#left-big #community-image-left {
+  width: 800px;
+  height: 800px;
+}
+
+#left-content {
+  object-position: center;
+  object-fit: contain;
+  width: fit-content;
+  position: sticky;
+  top:0;
+}
+
+#left-content h1{
+  font-size: 70px;
+  font-family: Kinfolk-Serif-Deck;
+  font-weight :400;
+  line-height :91px;
+  text-align :center;
+  padding :75px 75px 50px 75px;
+}
+
+#left-content p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 0px 150px 0px;
+
+  box-sizing :border-box;
+  color :rgb(77, 77, 77);
+  display :block;
+  font-family: Kinfolk-Serif-Text, serif;
+  font-size :18px;
+  font-style: normal;
+  font-weight :400;
+  height :108px;
+  line-height :27px;
+  margin-block-end: 30px;
+
+  margin-bottom :30px;
+
+  text-align :center;
+  text-size-adjust :100%;
+
+}
+
+#right-short {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.right-short-images div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-short .right-row1,
+.right-row2,
+.right-row3 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#right-img1 {
+  width: 196.4px;
+  height: 262.05px;
+}
+
+#right-img2 {
+  width: 196.4px;
+  height: 294.6px;
+}
+
+#right-img3 {
+  width: 196.4px;
+  height: 147.01px;
+}
+
+#right-img4 {
+  width: 196.4px;
+  height: 157.11px;
+}
+
+#right-img5 {
+  width: 196.4px;
+  height: 252.51px;
+}
+
+#right-img6 {
+  width: 196.4px;
+  height: 157.11px;
+}
+
+#right-img7 {
+  width: 196.4px;
+  height: 294.6px;
+}
+
+#right-img8 {
+  width: 196.4px;
+  height: 262.05px;
+}
+
+#right-img9 {
+  width: 196.4px;
+  height: 294.6px;
+}
+
+#right-short .right-row1,
+.right-row2,
+.right-row3 {
+  text-align: left;
+  width: min-content;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+#for-all-stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  margin: 100px;
+  padding: 50px 200px;
+}
+
+#all-stories {
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-width: 0.5px;
+  padding: 5px;
+  font-size: 21px;
+  font-weight: normal;
+}
+
+#all-stories:hover {
+  filter: brightness(75%);
+  color: white;
+  background-color: black;
+  line-height: normal;
+}
+hr {
+  color: #818181;
+}
+
+.caroline-polachek {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 50px;
+  padding-bottom: 140px;
+}
+
+.left-texts {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  gap: 180px;
+  position: sticky;
+  top: 70px;
+}
+
+#left-text-top {
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  margin-left: 30px;
+}
+
+#left-text-top p {
+  font-size: 15px;
+}
+
+#left-text-top h1 {
+  font-size: 90px;
+  font-family: Kinfolk-Serif-Deck;
+  white-space: initial;
+  line-height: normal;
+}
+
+#left-text-bottom {
+  justify-content: flex-end;
+  font-size: 40px;
+  font-weight: 550;
+}
+
+#left-text-bottom p {
+  font-family: "Kinfolk-Serif-Text-Italic";
+  font-style: normal;
+  line-height: 1.72em;
+  font-size: calc(0.00187 * 100vw + 15px);
+  max-width: 620px;
+  margin: 0;
+  font-size: large;
+}
+
+.for-caroline-image-on-right {
+  justify-content: flex-end;
+}
+
+#caroline-image-on-right-side {
+  height: 600px;
+  width: 400px;
+  object-fit: cover;
+  margin-right: 45px;
+  
+
+}
+
+#steamery-fixed-image {
+  /* position: absolute; */
+  height: 600px;
+  z-index: 80;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100%;
+}
+
+#horizontal-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  background-color: red;
+  border: 50px green;
+}
+
+.white-gap {
+  height: 225px;
+  width: 100%;
+}
+
+.image-slider {
+  overflow: hidden;
+  /* Hide extra images */
+  white-space: nowrap;
+  /* Keep images in a row */
+  width: totalWidth;
+  /* Replace with calculated value */
+  margin: 0 auto;
+}
+
+.horizontal-frame {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-slider img {
+  width: 530px;
+  height: 420px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  /* Change cursor on hover */
+  overflow: hidden;
+}
+
+.image-slider img:hover {
+  opacity: 0.8;
+  /* Add hover effect */
+}
+
+.image-slider .active {
+  opacity: 1;
+  /* Keep the active image opaque */
+}
+
+/* Styles for buttons (optional) */
+.prev-btn,
+.next-btn {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+}
+
+.center-image {
+  overflow: visible;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  /* Show the entire image even when centered */
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  text-align: center;
+  color: black;
+  padding: 80px 0px 0px 0px;
+}
+
+.footer-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0px 3px 0px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.newsletter-signup {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.newsletter-signup h2 {
+  font-size: 24px;
+  margin-bottom: 75px;
+}
+
+.newsletter-signup form {
+  gap: 10px;
+  position: relative;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+#custom-checkbox {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 1px solid #707070;
+  transition: background-color 200ms linear;
+}
+
+.newsletter-signup input {
+  border: 0;
+  padding: 0 0 5px;
+  border-bottom: 1px solid #000;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 13px;
+  font-family: "Kinfolk-Sans";
+  font-weight: normal;
+  width: 30%;
+}
+
+.newsletter-signup button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: -52%;
+  right: 34%;
+}
+
+.footer-links {
+  width: 90%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 5px solid black;
+}
+
+.footer-links p {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+
+.footer-links div a {
+  color: black;
+}
+.copyrights-terms-subscribe {
+  font-family: "Kinfolk-Sans";
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
+
+  display: flex;
+  gap: 45px;
+}
+.footer-links li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-links {
+  margin: 5%;
+  list-style: none;
+  gap: 45px;
+  text-decoration: none;
+  /* display: table; */
+  text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 13px;
+  font-family: "Kinfolk-Sans";
+  font-weight: normal;
+  word-spacing: 80px;
+}
+
+.design-credit {
+  font-size: 12px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.after-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-block-end: 100px;
+  margin-bottom: calc(0.03438 * 100vw + 50px);
+  border-bottom: 1px solid black;
+  margin: 100px;
+}
+
+.after-carousel p {
+  font-family: "Kinfolk-Serif-Text";
+  line-height: calc(0.00063 * 100vw + 28px);
+  font-weight: normal;
+  font-size: calc(0.00187 * 100vw + 15px);
+  text-align: center;
+  margin: 35px auto 0;
+
+  max-width: 620px;
+
+  clear: both;
+  padding-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#buy-now-button {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 8px 23px;
+  gap: 15px;
+  box-shadow: none;
+  border: 1px solid #000;
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  transition: all 200ms linear;
+  font-family: "Kinfolk-Serif-Text";
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: calc(-0.00313 * 100vw + 10px);
+}
+
+#buy-now-button:hover {
+  filter: brightness(75%);
+  color: white;
+  background-color: black;
+  line-height: normal;
+}
+
+.selected-stories-from-issue-fifty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: calc(0.00937 * 100vw + 35px);
+  font-family: Kinfolk-Serif-Deck;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.after-selected-stories-from-issue-fifty {
+  display: flex;
+  width: 100%;
+
+  margin-bottom: calc(0.00937 * 100vw + 35px);
+  text-align: left;
+  white-space: initial;
+  line-break: initial;
+  padding:0 2%;
+}
+
+.after-selected-stories-image{
+  width: 214px;
+  height: 322px;
+}
+
+.after-selected-stories{
+  padding: 0px 10px;
+  margin: 0px 5px;
+}
+
+.after-selected-stories .row-one-text{
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 11px;
+  font-family: "Kinfolk-Sans";
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.after-selected-stories .row-two-text{
+  font-size: 21px;
+  font-weight: normal;
+  font-family: "Kinfolk-Serif-Text";
+  line-height: 1.3;
+}
+
+.after-selected-stories .row-three-text{
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-family: "Kinfolk-Serif-Text", serif;
+  font-size: 1rem;
+  color: #4D4D4D;
+  margin: 0 0 20px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+.old-gays-big-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: calc(0.00937 * 100vw + 35px);
+}
+
+.old-gays-big-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  flex-direction: row;
+  gap: 20px;
+  padding: 90px 0px;
+  border-top: 1px solid black;
+}
+
+.old-gays-text-and-headings p {
+  width: auto;
+  white-space: break-spaces;
+}
+
+.old-gays-text-and-headings a{
+  color: #000;
+  text-decoration: none;
+}
+.form-container {
+  position: relative;
+}
+
+.old-gays-text-and-headings a h1{
+  font-size: 4.375rem;
+}
+
+#steamery-image{
+  
+    /* The image used */
+    background-image: url("images/steamery.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.final-kinfolk-image-container{
+  width: 100%;
+  overflow-x: hidden;
+  object-fit: contain;
+  margin: 60px 0px;
+}
+
+
+
+
+
+/* my changes */
+
+.after-on-community-container {
+  display: flex;
+  justify-content: center;
+  padding: 80px 60px 20px 20px;
+  margin: 40px;
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: calc(0.00937 * 100vw + 35px);
+
+  font-family: Kinfolk-Serif-Deck;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.after-on-community {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: calc(0.00937 * 100vw + 35px);
+  text-align: left;
+  white-space: initial;
+  line-break: initial;
+ padding:0 2%;
+}
+
+.after-on-community-image{
+  width: 214px;
+  height: 322px;
+}
+
+.after-on-community{
+  padding: 0px 10px;
+  margin: 0px 5px;
+}
+
+.after-on-community .row-one-text{
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 11px;
+  font-family: "Kinfolk-Sans";
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.after-on-community .row-two-text{
+  font-size: 21px;
+  font-weight: normal;
+  font-family: "Kinfolk-Serif-Text";
+  line-height: 1.3;
+}
+
+.after-on-community .row-three-text{
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-family: "Kinfolk-Serif-Text", serif;
+  font-size: 1rem;
+  color: #4D4D4D;
+  margin: 0 0 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+
+#communion-text-on-large-image{
+  position: relative;
+  flex-direction: column;
+  font-family: "Kinfolk-Serif-Text", serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  width: 100%;
+  overflow-x: hidden;
+  object-fit: contain;
+}
+
+.communion-image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#fashion-text{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family:Kinfolk-Sans, sans-serif;
+  
+  line-height: calc(0.00063 * 100vw + 28px);
+  font-weight: normal;
+  font-size: calc(0.00056 * 100vw + 15px);
+  position: absolute;
+  top: 30%;
+  left: 2%;
+}
+
+#communion-heading{
+  color: #ffffff;
+  font-family: Kinfolk-Serif-Deck;
+  line-height: calc(0.00063 * 100vw + 28px);
+  font-weight: normal;
+  font-size: calc(0.0456 * 100vw + 15px);
+  position: absolute;
+  top: 35%;
+  left: 2%;
+}
+
+
+#communion-para{
+  color: #ffffff;
+  font-family: Kinfolk-Serif-Text;
+  line-height: calc(0.00063 * 100vw + 28px);
+  font-weight: normal;
+  font-size: calc(0.00187 * 100vw + 15px);
+  margin: 27px auto 0 auto;
+  width: 50%;
+  min-width: 300px;
+  max-width: 730px;
+  position: absolute;
+  top: 42%;
+  left: 1.5%;
+  text-align: left;
+}
+
+
+.communion-container{
+  width: 100%;
+}
+
+
+
+
